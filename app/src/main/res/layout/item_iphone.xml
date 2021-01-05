@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_weight="1">
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ip12_mini"
+                    tools:ignore="MissingConstraints" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="15dp"
+
+                    app:layout_constraintBottom_toTopOf="@+id/cardViewSale"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/textViewTraGop"
+                        android:text="Trả góp 0 %"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:background="#FF9800"
+                        android:gravity="center"
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewSale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="15dp"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginBottom="10dp"
+                   >
+                    <TextView
+                        android:id="@+id/textViewSale"
+                        android:text="Lì Xì 2.700.000đ"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:background="#F44336"
+                        android:gravity="center"
+
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"/>
+                </androidx.cardview.widget.CardView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/textViewName"
+
+                    android:text="iPhone 12 Mini"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewGB"
+
+                    app:layout_constraintTop_toBottomOf="@+id/textViewName"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                    android:id="@+id/linearGB"
+                    android:background="#A8A4A4"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView64GB"
+
+                            app:cardCornerRadius="10dp"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+                            <TextView
+                                android:id="@+id/textView64GB"
+
+                                android:text="64GB"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:background="@color/black"
+                                android:gravity="center"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                />
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView128GB"
+
+                            app:cardCornerRadius="10dp"
+
+
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+                            <TextView
+                                android:id="@+id/textView128GB"
+
+                                android:text="128GB"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:background="#A8A4A4"
+                                android:gravity="center"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                />
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView256GB"
+
+                            app:cardCornerRadius="10dp"
+
+
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+                            <TextView
+                                android:id="@+id/textView256GB"
+
+                                android:text="256GB"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:background="#A8A4A4"
+                                android:gravity="center"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                />
+                        </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <LinearLayout
+                    android:id="@+id/linearPrice"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"
+
+                    app:layout_constraintTop_toBottomOf="@+id/cardViewGB"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewPrice"
+
+                    app:cardCornerRadius="10dp"
+
+
+
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                        <TextView
+
+                            android:text="19.290.000đ"
+                            android:textStyle="bold"
+                            android:textSize="30sp"
+                            android:textColor="@color/white"
+                            android:background="#F44336"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                </androidx.cardview.widget.CardView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+
+                            android:text="@string/sale_price"
+                            android:textStyle="bold"
+                            android:textSize="24sp"
+
+                            android:layout_marginLeft="40dp"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+
+                            android:text="5 ngày 13:16:33"
+                            android:textStyle="bold"
+                            android:textSize="24sp"
+
+                            android:layout_marginLeft="40dp"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <androidx.cardview.widget.CardView
+
+                    app:layout_constraintTop_toBottomOf="@+id/linearPrice"
+                    app:layout_constraintLeft_toLeftOf="parent"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/linearDetails"
+
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <ImageView
+                                android:layout_marginLeft="15dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_cpu"/>
+                            <TextView
+                                android:text="A14 Bionic"
+                                android:textSize="24sp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_screen"/>
+                            <TextView
+                                android:text="5.4'"
+                                android:textSize="24sp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_ram"/>
+                            <TextView
+                                android:text="4GB"
+                                android:textSize="24sp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+
+                            app:layout_constraintTop_toBottomOf="@+id/linearDetails"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_marginLeft="15dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_rom"/>
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:text="64GB"
+                                android:textSize="24sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

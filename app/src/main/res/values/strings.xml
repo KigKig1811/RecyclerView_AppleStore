@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RecyclerView_AppleStore</string>
+    <string name="sale_price"><strike>21.990.000đ</strike></string>
+</resources>
